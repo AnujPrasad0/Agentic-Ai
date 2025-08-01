@@ -12,7 +12,7 @@ export default function App() {
         );
       } else {
         return (
-          <Spline scene="https://prod.spline.design/Wn7zvgwfHXZutNF0/scene.splinecode" />
+          <Spline scene="https://prod.spline.design/8a4J527H4WGVNH8S/scene.splinecode" />
         );
       }
     } else {
