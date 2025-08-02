@@ -6,6 +6,10 @@ export default function useThemeClass() {
 
   useEffect(() => {
     console.log("Theme is now", mode);
-    document.documentElement.classList.toggle("dark", mode === "dark");
+    if (mode === "dark") {
+      document.documentElement.classList.add("dark");
+    } else {
+      document.documentElement.classList.remove("dark");
+    }
   }, [mode]);
 }

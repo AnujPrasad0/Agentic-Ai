@@ -13,7 +13,7 @@ const HeroSection = () => {
       </p>
 
       {/* CTA Button */}
-      <button className="px-6 py-3 bg-[#111827] dark:bg-primary-dark text-white font-semibold rounded-md shadow-md hover:bg-primary-light/90 dark:hover:bg-primary-dark/90 transition">
+      <button className="px-6 py-3 bg-[#111111] dark:bg-[#d4d4e6] text-white dark:text-[#111111] font-semibold rounded-md shadow-md hover:bg-primary-light/90 dark:hover:bg-primary-dark/90 transition">
         Explore Types
       </button>
 
