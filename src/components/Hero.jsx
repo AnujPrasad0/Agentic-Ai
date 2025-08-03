@@ -5,7 +5,7 @@ import Robo from "./robo";
 const Hero = () => {
   return (
     <div>
-      <div className="lg:hidden flex flex-col items-center gap-5">
+      <div className="hidden flex-col items-center gap-5">
         <div className="w-70 m-auto pl-10 sm:w-100 md:w-130">
           <img className="w-full" src={airobot} alt="" />
         </div>
@@ -13,7 +13,7 @@ const Hero = () => {
           Get Started
         </button>
       </div>
-      <div className="hidden lg:block">
+      <div className="">
         <Robo />
       </div>
       <HeroSection />

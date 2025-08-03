@@ -8,9 +8,13 @@ const Header = () => {
   const mode = useSelector((state) => state.theme.mode);
 
   return (
-    <div className="flex justify-between items-center px-5 py-3">
+    <div className="z-10 flex justify-between fixed w-full items-center px-5 py-3 bg-white/20 dark:bg-black/20 backdrop-blur-md rounded-b-sm transition-all ease-in-out duration-300">
       <div className="">
-        {mode === "light" ? <RiRobot2Line size={50} /> : <RiRobot2Line size={50} color="#fff" />}
+        {mode === "light" ? (
+          <RiRobot2Line size={50} />
+        ) : (
+          <RiRobot2Line size={50} color="#fff" />
+        )}
       </div>
       <ThemeToggler />
       <div className="w-20">
