@@ -1,6 +1,6 @@
 const HeroSection = () => {
   return (
-    <section className="flex flex-col px-5">
+    <section className="flex flex-col px-5 relative lg:-top-30 xl:-top-35 z-1  lg:shadow-[0_-60px_30px_#111111] xl:shadow-[0_-80px_30px_#111111]">
       <h1 className="text-[1.33rem] dark:text-white text-center poppins font-[500] sm:text-4xl md:text-6xl">
         Where AI Agents Connect,
         <br />
