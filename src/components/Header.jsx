@@ -13,7 +13,7 @@ const Header = () => {
         {mode === "light" ? (
           <RiRobot2Line size={50} />
         ) : (
-          <RiRobot2Line size={50} color="#44DD65" />
+          <RiRobot2Line size={50} color="#41d58b" />
         )}
       </div>
       <ThemeToggler />

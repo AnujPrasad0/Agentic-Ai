@@ -1,20 +1,25 @@
+
 const HeroSection = () => {
   return (
-    <section className="flex flex-col px-5 relative lg:-top-30 xl:-top-35 z-1  lg:shadow-[0_-60px_30px_#111111] xl:shadow-[0_-80px_30px_#111111]">
-      <h1 className="text-[1.33rem] dark:text-white text-center poppins font-[500] sm:text-4xl md:text-6xl">
+    <section className="flex flex-col items-center px-5 relative gap-6 -top-0 md:-top-5 lg:-top-30 xl:-top-35 z-1 shadow-[0_-70px_30px_#111111] sm:shadow-[0_-110px_30px_#111111] md:shadow-[0_-120px_30px_#111111] lg:shadow-[0_-60px_30px_#111111] xl:shadow-[0_-100px_30px_#111111]">
+      <h1 className="text-[1.33rem] dark:text-white text-center poppins font-[500] sm:text-4xl md:text-5xl">
         Where AI Agents Connect,
         <br />
-        Solve, and Deliver <span className="text-[#44DD65]">- AgenticAI</span>
+        Solve, and Deliver{" "}
+        <span className="dark:bg-[linear-gradient(to_right,_#41d58b_30%,_#070b0c_120%)] text-transparent bg-clip-text">
+          - AgenticAI.
+        </span>
       </h1>
 
-      {/* <p className="">
-        Dive into a new era of autonomous, goal-driven intelligence. From task
-        automation to smart assistants—experience the future, today.
-      </p> */}
+      <p className="text-center text-[0.8rem] md:text-[1.3rem] opacity-80 dark:text-white">
+        AgenticAI brings AI agents together to collaborate, solve challenges,
+        and deliver transformative results -<br className="hidden lg:block" />
+        seamless, scalable and adaptive.
+      </p>
 
-      {/* <button className="bg-[#111111] dark:bg-[#d4d4e6] text-white dark:text-[#111111] transition-all duration-300 ease-in-out">
-        Explore Types
-      </button> */}
+      <button className="text-2xl py-3 px-6 rounded-2xl scale-75 sm:scale-100 dark:bg-[linear-gradient(to_bottom,_#1b1b1b_30%,_#333333_120%)] dark:text-white/90 active:scale-70 sm:active:scale-90 active:ring-2 dark:active:ring-white transition-colors duration-300 ease-in-out">
+        Discover
+      </button>
     </section>
   );
 };
