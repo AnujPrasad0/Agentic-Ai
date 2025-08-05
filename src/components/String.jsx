@@ -1,7 +1,12 @@
 import { useRef, useEffect, useState } from "react";
 import gsap from "gsap";
+import { useSelector } from "react-redux";
 
 const String = () => {
+  const mode = useSelector((state) => state.theme.mode);
+
+  const colr = mode === "light" ? "black" : "white";
+
   const containerRef = useRef(null);
   const pathRef = useRef(null);
   const [dims, setDims] = useState({ width: 0, height: 0 });
@@ -17,7 +22,9 @@ const String = () => {
       setDims({ width, height });
       const midY = height / 2;
       // Resting path based on actual container dims
-      finalPathRef.current = `M 0 ${midY} Q ${width / 2} ${midY} ${width} ${midY}`;
+      finalPathRef.current = `M 0 ${midY} Q ${
+        width / 2
+      } ${midY} ${width} ${midY}`;
       // Initialize path
       if (pathRef.current) {
         gsap.set(pathRef.current, { attr: { d: finalPathRef.current } });
@@ -82,7 +89,7 @@ const String = () => {
           <path
             ref={pathRef}
             d=""
-            stroke="white"
+            stroke={colr}
             strokeWidth="2"
             fill="transparent"
           />

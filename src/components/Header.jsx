@@ -11,7 +11,7 @@ const Header = () => {
     <div className="z-10 flex justify-between fixed w-full items-center px-5 py-3 bg-white/20 dark:bg-black/20 backdrop-blur-md rounded-b-sm transition-all ease-in-out duration-300">
       <div className="">
         {mode === "light" ? (
-          <RiRobot2Line size={50} />
+          <RiRobot2Line size={50} color="#000" />
         ) : (
           <RiRobot2Line size={50} color="#41d58b" />
         )}
