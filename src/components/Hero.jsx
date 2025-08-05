@@ -1,6 +1,6 @@
 import airobot from "../assets/airobot.gif";
 import HeroSection from "./HeroSection";
-import Robo from "./robo";
+import Robo from "./Robo";
 
 const Hero = () => {
   return (
