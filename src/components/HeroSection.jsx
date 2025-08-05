@@ -1,7 +1,7 @@
 const HeroSection = () => {
   return (
     <section className="flex flex-col items-center px-5 relative gap-6 -top-0 md:-top-5 lg:-top-30 xl:-top-35 z-1 shadow-[0_-70px_30px_#d4d4e6] dark:shadow-[0_-70px_30px_#111111] sm:shadow-[0_-110px_30px_#d4d4e6] dark:sm:shadow-[0_-110px_30px_#111111] md:shadow-[0_-120px_30px_#d4d4e6] dark:md:shadow-[0_-120px_30px_#111111] lg:shadow-[0_-60px_30px_#d4d4e6] dark:lg:shadow-[0_-60px_30px_#111111] xl:shadow-[0_-100px_30px_#d4d4e6] dark:xl:shadow-[0_-100px_30px_#111111] transition-all duration-300 ease-in-out">
-      <h1 className="text-[1.33rem] text-black dark:text-white text-center poppins font-[500] sm:text-4xl md:text-5xl transition-all duration-300 ease-in-out">
+      <h1 className="text-[1.33rem] leading-7 sm:leading-11 md:leading-14 lg:leading-16 text-black dark:text-white text-center poppins font-[500] sm:text-4xl md:text-5xl transition-all duration-300 ease-in-out">
         Where AI Agents Connect,
         <br />
         Solve, and Deliver{" "}
