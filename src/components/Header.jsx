@@ -1,7 +1,7 @@
 import { RiRobot2Line } from "react-icons/ri";
 import { HiBars3 } from "react-icons/hi2";
 import menubar from "../assets/menu-bar.gif";
-import ThemeToggler from "./themeToggler";
+import ThemeToggler from "./ThemeToggler";
 import { useSelector } from "react-redux";
 
 const Header = () => {
