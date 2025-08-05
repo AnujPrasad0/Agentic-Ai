@@ -10,7 +10,7 @@ const ThemeToggler = () => {
   return (
     <button
       onClick={modeSelect}
-      className="text-2xl font-bold  dark:text-[#fff] text-[#000] bg-[#3B82F6] dark:bg-[#fff] dark:text-black px-3 py-2 rounded-xl cursor-pointer transition-colors duration-300 ease-in-out"
+      className="text-2xl font-bold text-[#000] bg-[#3B82F6] dark:bg-[#fff] dark:text-black px-3 py-2 rounded-xl cursor-pointer transition-colors duration-300 ease-in-out"
     >
       Mode
     </button>
