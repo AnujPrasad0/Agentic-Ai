@@ -16,7 +16,7 @@ const HeroSection = () => {
         seamless, scalable and adaptive.
       </p>
 
-      <button className="text-2xl py-3 px-6 rounded-2xl scale-75 sm:scale-100 bg-[linear-gradient(to_bottom,_#f0f0f7_30%,_#c3c3d9_120%)] dark:bg-[linear-gradient(to_bottom,_#1b1b1b_30%,_#333333_120%)] text-black/90 dark:text-white/90 active:scale-70 sm:active:scale-90 active:ring-2 active:ring-black dark:active:ring-white transition-colors duration-300 ease-in-out">
+      <button className="animate-bounce hover:animate-none text-2xl py-3 px-6 rounded-2xl scale-75 sm:scale-100 bg-[linear-gradient(to_bottom,_#f0f0f7_30%,_#c3c3d9_120%)] dark:bg-[linear-gradient(to_bottom,_#1b1b1b_30%,_#333333_120%)] text-black/90 dark:text-white/90 active:scale-70 sm:active:scale-90 active:ring-2 active:ring-black dark:active:ring-white transition-all duration-300 ease-in-out active:transition-none">
         Discover
       </button>
     </section>

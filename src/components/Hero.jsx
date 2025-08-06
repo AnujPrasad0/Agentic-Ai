@@ -1,12 +1,17 @@
-import airobot from "../assets/airobot.gif";
 import HeroSection from "./HeroSection";
 import Robo from "./Robo";
+import React, { Suspense, lazy } from "react";
+
+const LazyComponent = lazy(() => import("./Robo"));
 
 const Hero = () => {
   return (
     <div>
       <div className="">
-        <Robo />
+        <Suspense fallback={<div>Loading...</div>}>
+          <LazyComponent />
+        </Suspense>
+        {/* <Robo /> */}
       </div>
       <HeroSection />
     </div>
