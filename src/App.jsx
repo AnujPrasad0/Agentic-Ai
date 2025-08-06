@@ -2,16 +2,18 @@ import useThemeClass from "./hooks/useThemeClass";
 import Home from "./pages/Home";
 import { useRef } from "react";
 import gsap from "gsap";
+import agentTypesAPI from "./features/agentTypes/agentTypesAPI";
 
 const App = () => {
   useThemeClass();
+  agentTypesAPI();
 
   const cursor = useRef();
 
   const handleMouseMove = (e) => {
     gsap.to(cursor.current, {
       x: e.clientX,
-      y: e.clientY,
+      y: e.clientY + 8,
       duration: 1,
       ease: "back.out",
     });

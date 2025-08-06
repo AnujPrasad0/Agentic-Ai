@@ -5,7 +5,6 @@ export default function useThemeClass() {
   const mode = useSelector((state) => state.theme.mode);
 
   useEffect(() => {
-    console.log("Theme is now", mode);
     if (mode === "dark") {
       document.documentElement.classList.add("dark");
       localStorage.setItem("theme", "dark");

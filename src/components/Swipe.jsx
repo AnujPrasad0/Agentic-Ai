@@ -1,16 +1,20 @@
 // Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
+import "swiper/css";
+import "swiper/css/pagination";
 
-import './swipe.css';
+import "./swipe.css";
 
 // import required modules
-import { Pagination } from 'swiper/modules';
+import { Pagination } from "swiper/modules";
+import { useSelector } from "react-redux";
+import SwiperContent from "./SwiperContent";
 
 export default function Swipe() {
+  const data = useSelector((state) => state.agentTypes.data);
+
   return (
     <>
       <Swiper
@@ -20,19 +24,19 @@ export default function Swipe() {
           clickable: true,
         }}
         breakpoints={{
-          '@0.00': {
+          "@0.00": {
             slidesPerView: 1,
             spaceBetween: 10,
           },
-          '@0.75': {
+          "@0.75": {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          '@1.00': {
+          "@1.00": {
             slidesPerView: 3,
             spaceBetween: 40,
           },
-          '@1.50': {
+          "@1.50": {
             slidesPerView: 4,
             spaceBetween: 50,
           },
@@ -40,15 +44,14 @@ export default function Swipe() {
         modules={[Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>Slide 1</SwiperSlide>
-        <SwiperSlide>Slide 2</SwiperSlide>
-        <SwiperSlide>Slide 3</SwiperSlide>
-        <SwiperSlide>Slide 4</SwiperSlide>
-        <SwiperSlide>Slide 5</SwiperSlide>
-        <SwiperSlide>Slide 6</SwiperSlide>
-        <SwiperSlide>Slide 7</SwiperSlide>
-        <SwiperSlide>Slide 8</SwiperSlide>
-        <SwiperSlide>Slide 9</SwiperSlide>
+        {data.map((data, idx) => (
+          <SwiperSlide
+            key={idx}
+            className="rounded-2xl border-black dark:border-white border-2 overflow-hidden transition-colors duration-300 ease-in-out"
+          >
+            <SwiperContent data={data} />
+          </SwiperSlide>
+        ))}
       </Swiper>
     </>
   );
