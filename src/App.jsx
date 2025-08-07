@@ -68,7 +68,7 @@ const App = () => {
         ref={cursor}
         className="fixed z-20 h-4 w-4 bg-black dark:bg-white rounded-full transition-colors duration-300 ease-in-out"
       ></div>
-      <div onMouseMove={handleMouseMove} className="w-full">
+      <div onMouseMove={handleMouseMove} className="w-full overflow-x-hidden">
         <Home />
       </div>
     </>

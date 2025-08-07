@@ -1,5 +1,5 @@
 import { HiOutlineArrowDownCircle } from "react-icons/hi2";
-import Swipe from "./Swipe";
+import Swipe from "./swipers/Swipe";
 
 const Agents = () => {
   let width = window.innerWidth;
