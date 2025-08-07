@@ -3,23 +3,8 @@ import Agents from "../components/Agents";
 import Header from "../components/Header";
 import Hero from "../components/Hero";
 import String from "../components/String";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-gsap.registerPlugin(ScrollTrigger);
 const Home = () => {
-  gsap.from(".box", {
-    scrollTrigger: {
-      trigger: ".box",
-      start: "top 80%",
-      end: "top 30%",
-      scrub: true,
-      markers: true,
-    },
-    x: 200,
-    opacity: 0,
-  });
-
   return (
     <>
       <Header />

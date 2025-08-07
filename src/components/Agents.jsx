@@ -5,7 +5,7 @@ const Agents = () => {
   let width = window.innerWidth;
 
   return (
-    <div className="py-15 px-7 lg:px-15 flex flex-col gap-5 lg:gap-15">
+    <div className="py-15 lg:py-0 px-7 lg:px-15 flex flex-col gap-5 lg:gap-15">
       <div className="flex items-center justify-center gap-5">
         <h1 className="text-center text-black dark:text-white text-[1.33rem] sm:text-4xl md:text-5xl poppins font-[500] transition-all duration-300 ease-in-out">
           Try Them
